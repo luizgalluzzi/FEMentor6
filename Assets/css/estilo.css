@@ -7,12 +7,11 @@
 
 body{
     background: url(../images/bg-mobile.png) no-repeat;
-    width: 100fr;
 }
 
 .container {
     height: 100vh;
-    display: flex;
+    max-width: 375px;
 }
 
 .section {
@@ -21,14 +20,14 @@ body{
     height: 30vh;
     width: 50vh;
     border-radius: 2vh 15vh 2vh 2vh;
-    margin-top: 20vh;
-    margin-left: 3vh;
+    margin-top: 20vh
 }
 
 #logo {
     position: relative;
     padding-top: 5vh;
     margin-left: 7vh;
+
 }
 
 .image {
@@ -38,7 +37,7 @@ body{
     width: 7vh;
     height: 7vh;
     margin-left: 7vh;
-    margin-top: 10vh;
+    margin-top: 12vh;
     align-items: center;
     justify-content: center;
     border-radius: 1vh;
@@ -55,7 +54,7 @@ body{
     width: 7vh;
     height: 7vh;
     margin-left: 17vh;
-    margin-top: 10vh;
+    margin-top: 12vh;
     align-items: center;
     justify-content: center;
     border-radius: 1vh;
@@ -68,7 +67,7 @@ body{
     width: 7vh;
     height: 7vh;
     margin-left: 27vh;
-    margin-top: 10vh;
+    margin-top: 12vh;
     align-items: center;
     justify-content: center;
     border-radius: 1vh;
@@ -77,18 +76,21 @@ body{
 .section1 {
     position: absolute;
     background-color:hsl(228, 56%, 26%);
-    height: 24vh;
+    height: 26vh;
     width: 50vh;
     border-radius: 2vh;
     margin-top: 52vh;
-    margin-left: 3vh;
+}
+
+.sessao {
+    margin-left: 1vh;
 }
 
 #text {
     color: hsl(243, 100%, 93%);
     text-align: center;
     padding-top: 5vh;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .box {
@@ -98,14 +100,14 @@ body{
     height: 11vh;
     width: 28vh;
     border-radius: 2vh;
-    margin-top: 70vh;
-    margin-left: 12vh;
+    margin-top: 72vh;
+    margin-left: 20vh;
     align-items: center;
 }
 
 .box, p {
     color: hsl(229, 57%, 11%);
-    font-size: 40px;
+    font-size: 33px;
     justify-content: center;
 }
 
@@ -123,7 +125,6 @@ body{
     margin-left: 10%;
     margin-right: 10%;
 }
-
 
 .progress {
     width: 80%;
@@ -143,7 +144,7 @@ body{
     width: 70%;
     height: 16px;
     border-radius: 10px;
-    margin-top: 4%;
+    margin-top: 4.5%;
     margin-left: 1%;
     background: linear-gradient(to right, hsl(6, 100%, 80%) 0%,  hsl(335, 100%, 65%) 81.5%);
 }
@@ -155,17 +156,25 @@ body{
     position:absolute;
     border-radius: 6px;
     margin-left: 65%;
-    margin-top: 1.4%;
+    margin-top: 1.5%;
 }
 
-@media(orientation: landscape) {
-    .container {
-        flex-direction: row;
-}
-}
+@media (min-width: 376px) {
 
-@media(orientation: portrait) {
+    body {
+        background: url(../images/bg-desktop.png) no-repeat; 
+        background-color: hsl(229, 57%, 11%);
+        background-position: bottom;
+    }
+
     .container {
-        flex-direction: column;
-}
+        height: 100vh;
+        max-width: 1440px;
+    }
+
+    .sessao {
+    margin-top: 0;
+    }
+
+
 }
