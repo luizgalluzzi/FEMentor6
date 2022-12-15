@@ -1,4 +1,4 @@
-# Projeto "Institucional Starbucks"
+# Projeto "Front-end mentor 6"
   Decimo segundo projeto proposto pela mentoria "conquiste sua vaga".
 
 # Inspiração do Projeto:
