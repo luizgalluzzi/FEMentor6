@@ -20,7 +20,7 @@ body{
     height: 30vh;
     width: 50vh;
     border-radius: 2vh 15vh 2vh 2vh;
-    margin-top: 20vh
+    margin-top: 20vh;
 }
 
 #logo {
@@ -83,7 +83,8 @@ body{
 }
 
 .sessao {
-    margin-left: 1vh;
+    margin-left: 8vh;
+    margin-top: 0vh;
 }
 
 #text {
@@ -101,7 +102,7 @@ body{
     width: 28vh;
     border-radius: 2vh;
     margin-top: 72vh;
-    margin-left: 20vh;
+    margin-left: 11vh;
     align-items: center;
 }
 
@@ -170,11 +171,59 @@ body{
     .container {
         height: 100vh;
         max-width: 1440px;
+       
     }
 
-    .sessao {
-    margin-top: 0;
+    .section {
+        margin-left: 15vh;
+        margin-top: 30vh;
     }
 
+    .section1 {
+        margin-left: 70vh;
+        margin-top: 40vh;
+        width: 70vh;
+        height: 20vh;
+    }
+
+    #text {
+        text-align: left;
+        margin-left: 8vh;
+    }
+    .progress {
+        margin-left: 10%;
+        margin-top: 5%;
+        margin-bottom: 10px;
+    }
+    
+    .progress::before {
+        margin-top: 2.2%;
+        margin-left: 0.5%;
+    }
+
+    .ball {
+        margin-left: 67.5%;
+        margin-top: 0.9%;
+    }
+
+    .box {
+        margin-top: 34vh;
+        margin-left: 114vh;
+        width: 150px;
+        height: 70px;
+    }
+
+    .box:before {
+        content: "";
+        position: absolute;
+        border-left: 20px solid white;
+        border-right: 20px solid transparent;
+        border-top: 20px solid white;
+        border-bottom: 20px solid transparent;
+        right: 0.55px;
+        margin-top: 38px;
+        rotate: 90deg;
+        top: 10px;
+    }
 
 }
